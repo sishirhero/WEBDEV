@@ -1,0 +1,97 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #4865F5, #00DBDE);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#gamediv {
+    width: 400px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align the texts to the left */
+    justify-content: space-around; /* Center the buttons vertically */
+    border-radius: 10px;
+    background-color: #FF6767;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.gametext {
+    font-size: 24px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 10px 0; /* Adjust margin for better spacing */
+}
+
+#playertext {
+    color: #00f7fc;
+}
+
+#computertext {
+    color: #00f7fc;
+}
+
+.choiceBtns-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Center the buttons horizontally */
+}
+
+.choiceBtn {
+    margin: 10px; /* Adjust margin for better spacing */
+    line-height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #363795;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.choiceBtn:hover {
+    background-color: #4B6CB7;
+}
+
+.choiceBtn:focus {
+    outline: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#gamediv h1,
+.choiceBtn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Add the following styles for the containers */
+.playerContainer, .computerContainer {
+    display: flex;
+    align-items: center;
+}
+
+.emoji {
+    font-size: 30px;
+    margin-right: 10px;
+}
